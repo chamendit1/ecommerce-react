@@ -20,7 +20,7 @@ const Navbar = ( { totalItems } ) => {
                         Commerce.js
                     </Typography>
                     <div className={classes.grow} />
-                    {location.pathname == '/' && (<div className={classes.button}>
+                    {location.pathname === '/' && (<div className={classes.button}>
                         <IconButton component={Link} to="/cart" aria-label="Show cart items" color="inherit">
                             <Badge badgeContent={totalItems} color="secondary">
                                 <ShoppingCart />
